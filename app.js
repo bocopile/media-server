@@ -1,20 +1,22 @@
 const NodeMediaServer = require('node-media-server');
 
+const { HTTP_PORT, RTMP_PORT, MEDIA_ROOT, FFMPEG_ROOT } = require('./config.json');
+
 const config = {
     rtmp: {
-        port: 1935,
+        port: `${RTMP_PORT}`,
         chunk_size: 60000,
         gop_cache: true,
         ping: 30,
         ping_timeout: 60
     },
     http: {
-        port: 8000,
-        mediaroot: '/Users/bokhoshin/WebstormProjects/media-server/live',
+        port: `${HTTP_PORT}`,
+        mediaroot: `${MEDIA_ROOT}`,
         allow_origin: '*'
     },
     trans: {
-        ffmpeg: '/usr/local/bin/ffmpeg',
+        ffmpeg: `${FFMPEG_ROOT}`,
         tasks: [
             {
                 app: 'live',

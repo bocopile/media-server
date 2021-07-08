@@ -1,15 +1,9 @@
 {
   "_COMMENT_SERVICE": "Service의 IP, PORT 설정에 관한 정보",
-  "SERVICE_HOST": "192.168.0.73",
-  "SERVICE_PORT": "3000",
-
-  "_COMMENT_DATABASE": "MySQL 연결을 위한 설정 관한 정보",
-  "DATABASE": "face_recognition_2020",
-  "DATABASE_HOST": "localhost",
-  "DATABASE_USER": "root",
-  "DATABASE_PASSWORD": "onycom1234",
-  "DATABASE_LIMIT": "30",
-  "DATABASE_PORT": "3306",
+  "HTTP_PORT": "8000",
+  "RTMP_PORT": "1935",
+  "MEDIA_ROOT": "/Users/bokhoshin/WebstormProjects/media-server/live",
+  "FFMPEG_ROOT": "/usr/local/bin/ffmpeg"
 
 
 }
